@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Global Variables
+   ========================================================================== */
+
+/* Colors */
+:root {
+  --color-primary: #007bff;      /* Main primary color */
+  --color-secondary: #0056b3;    /* Secondary color for accents */
+  --color-text: #333;            /* Main text color */
+  --color-background: #f9f9f9;   /* Background color for the app */
+}
+
+/* Fonts */
+:root {
+  --font-family: 'Helvetica Neue', sans-serif; /* Default font family */
+  --font-size-base: 16px;                     /* Base font size */
+  --line-height-base: 1.6;                    /* Base line height */
+}
+
+/* Spacing */
+:root {
+  --spacing-unit: 1rem;           /* Basic spacing unit */
+  --spacing-section: 2rem;        /* Spacing between major sections */
+  --spacing-padding: 1.5rem;       /* Padding for elements */
+}
+
+/* Breakpoints */
+:root {
+  --breakpoint-small: 576px;      /* Small screens */
+  --breakpoint-medium: 768px;     /* Medium screens */
+  --breakpoint-large: 992px;      /* Large screens */
+  --breakpoint-xlarge: 1200px;    /* Extra large screens */
+}
+
+/* ==========================================================================
+   Z-Index Variables
+   ========================================================================== */
+
+/* Z-Index for stacking elements */
+:root {
+  --z-index-header: 100;          /* Z-index for header */
+  --z-index-modal: 200;           /* Z-index for modal overlays */
+  --z-index-tooltip: 300;         /* Z-index for tooltips */
+}
+
+/* ==========================================================================
+   Animation and Transition Durations
+   ========================================================================== */
+
+/* Durations for animations and transitions */
+:root {
+  --duration-fast: 200ms;         /* Fast animation/transition duration */
+  --duration-normal: 400ms;       /* Normal animation/transition duration */
+  --duration-slow: 600ms;         /* Slow animation/transition duration */
+}
+
+/* ==========================================================================
+   Border Radii
+   ========================================================================== */
+
+/* Common border radii values */
+:root {
+  --border-radius-sm: 4px;        /* Small border radius */
+  --border-radius-md: 8px;        /* Medium border radius */
+  --border-radius-lg: 12px;       /* Large border radius */
+}

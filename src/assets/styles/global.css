@@ -1,0 +1,96 @@
+/* === Global Reset === */
+
+/* Apply a consistent box-sizing model to all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Global Variables === */
+
+:root {
+  --font-family: 'Helvetica Neue', sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.6;
+  --color-primary: #007bff;
+  --color-secondary: #0056b3;
+  --color-text: #333;
+  --color-background: #f9f9f9;
+}
+
+/* === Global Typography === */
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+/* === Global Links === */
+
+/* Style links for a consistent and user-friendly experience */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+/* === Global Container === */
+
+/* Center the main content vertically and horizontally */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* === Utility Classes === */
+
+/* Utility class for center-aligned text */
+.text-center {
+  text-align: center;
+}
+
+/* === Responsive Styles === */
+
+/* Apply responsive font size and heading sizes for smaller screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1, h2, h3 {
+    font-size: 24px;
+  }
+
+  /* Add more responsive styles as needed */
+}
+
+/* === Custom Styles === */
+
+/* Styling for a custom header component */
+.custom-header {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1rem;
+}
+
+/* === Media Query Mixin === */
+
+/* A reusable mixin for media queries */
+@mixin media-query($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
